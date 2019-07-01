@@ -23,7 +23,7 @@
     <link rel="alternative" href="/atom.xml" title="Sherry的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -83,13 +83,9 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/Sherrychen1" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:1393080039@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -126,13 +122,9 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/Sherrychen1" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:1393080039@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -159,6 +151,71 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-鼠标附上效果" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/01/鼠标附上效果/">鼠标附上效果</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/01/鼠标附上效果/" class="archive-article-date">
+  	<time datetime="2019-07-01T13:21:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##一个鼠标经过的css特效</p>
+<p>  ###html代码如下<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;link href=&quot;https://use.fontawesome.com/releases/v5.8.1/css/all.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">         &lt;div class=&quot;image middle&quot;&gt;</span><br><span class="line">           &lt;img src=&quot;img.jpeg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">           &lt;div class=&quot;image-content&quot;&gt;</span><br><span class="line">                &lt;h1&gt;Image Title&lt;/h1&gt;</span><br><span class="line">                &lt;div class=&quot;icons&quot;&gt;</span><br><span class="line">                      &lt;a href=&quot;#&quot; class=&quot;icon fas fa-heart&quot;&gt;&lt;/a&gt;</span><br><span class="line">                      &lt;a href=&quot;#&quot; class=&quot;icon fas fa-comment&quot;&gt;&lt;/a&gt;</span><br><span class="line">                      &lt;a href=&quot;#&quot; class=&quot;icon fas fa-share&quot;&gt;&lt;/a&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">           &lt;/div&gt;</span><br><span class="line">         &lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>  ###css代码如下<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">  font-family: &quot;montserrat&quot;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;</span><br><span class="line">  background-color: #ddd;</span><br><span class="line">&#125;</span><br><span class="line">.middle&#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  left: 50%;</span><br><span class="line">  top: 50%;</span><br><span class="line">  transform: translate(-50%,-50%);</span><br><span class="line">&#125;</span><br><span class="line">.image&#123;</span><br><span class="line">  width: 440px;</span><br><span class="line">  height: 300px;</span><br><span class="line">  overflow: hidden;</span><br><span class="line">  cursor: pointer;</span><br><span class="line">&#125;</span><br><span class="line">.image img&#123;</span><br><span class="line">  width: 440px;</span><br><span class="line">  height: 300px;</span><br><span class="line">&#125;</span><br><span class="line">.image-content&#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  top: 0;</span><br><span class="line">  left: 0;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 100%;</span><br><span class="line">  padding: 40px;</span><br><span class="line">  box-sizing: border-box;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">.image-content h1&#123;</span><br><span class="line">  color: #fff;</span><br><span class="line">  text-transform: uppercase;</span><br><span class="line">  transform: translateY(20px);</span><br><span class="line">  transition: 0.4s;</span><br><span class="line">&#125;</span><br><span class="line">.image:hover .image-content h1&#123;</span><br><span class="line">  transform: translateY(0px);</span><br><span class="line">&#125;</span><br><span class="line">.icons&#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  right: 40px;</span><br><span class="line">  bottom: 40px;</span><br><span class="line">&#125;</span><br><span class="line">.icon&#123;</span><br><span class="line">  text-decoration: none;</span><br><span class="line">  margin: 0 10px;</span><br><span class="line">  color: #333;</span><br><span class="line">  font-size: 22px;</span><br><span class="line">  transform: translateY(80px);</span><br><span class="line">&#125;</span><br><span class="line">.image:hover .icon&#123;</span><br><span class="line">  transform: translateY(0);</span><br><span class="line">&#125;</span><br><span class="line">.icon:nth-child(1)&#123;</span><br><span class="line">  transition: transform 0.4s 0.05s,color 0.4s;</span><br><span class="line">&#125;</span><br><span class="line">.icon:nth-child(2)&#123;</span><br><span class="line">  transition: transform 0.4s 0.1s,color 0.4s;</span><br><span class="line">&#125;</span><br><span class="line">.icon:nth-child(3)&#123;</span><br><span class="line">  transition: transform 0.4s 0.15s,color 0.4s;</span><br><span class="line">&#125;</span><br><span class="line">.icon:hover&#123;</span><br><span class="line">  color: #3498db;</span><br><span class="line">&#125;</span><br><span class="line">.image-content::before&#123;</span><br><span class="line">  content: &quot;&quot;;</span><br><span class="line">  position: absolute;</span><br><span class="line">  left: 0;</span><br><span class="line">  bottom: 0;</span><br><span class="line">  background: rgba(255,255,255,0.7);</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 0;</span><br><span class="line">  clip-path: polygon(0 100%,100% 0,100% 100%);</span><br><span class="line">  transition: 0.5s;</span><br><span class="line">&#125;</span><br><span class="line">.image-content:hover::before&#123;</span><br><span class="line">  height: 140px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/01/鼠标附上效果/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-我的博客开始的文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -446,7 +503,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://fangyu.xyz/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
@@ -477,7 +534,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">迷茫的前端切图仔一名&lt;br&gt;谢谢大家&lt;br&gt;要么庸俗,要么孤独</div>
   	  	
     	</section>
     
