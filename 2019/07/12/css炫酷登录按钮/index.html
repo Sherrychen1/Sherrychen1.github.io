@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://sherryai.top">
-  <title>Archives: 2019/6 | Sherry的博客</title>
+  <title>css炫酷登录按钮 | Sherry的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="此为博客一枚。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sherry的博客">
-<meta property="og:url" content="http://sherryai.top/archives/2019/06/index.html">
+  <meta name="description" content="主要实现了一个登录按钮以及登录过程的动画以及登录结束后显示对号">
+<meta name="keywords" content="html css jquery">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css炫酷登录按钮">
+<meta property="og:url" content="http://sherryai.top/2019/07/12/css炫酷登录按钮/index.html">
 <meta property="og:site_name" content="Sherry的博客">
-<meta property="og:description" content="此为博客一枚。">
+<meta property="og:description" content="主要实现了一个登录按钮以及登录过程的动画以及登录结束后显示对号">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-15T08:42:01.824Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sherry的博客">
-<meta name="twitter:description" content="此为博客一枚。">
+<meta name="twitter:title" content="css炫酷登录按钮">
+<meta name="twitter:description" content="主要实现了一个登录按钮以及登录过程的动画以及登录结束后显示对号">
   
     <link rel="alternative" href="/atom.xml" title="Sherry的博客" type="application/atom+xml">
   
@@ -163,49 +164,182 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-css炫酷登录按钮" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/30/我的博客开始的文章/" class="archive-article-date">
-  	<time datetime="2019-06-29T23:53:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/30/我的博客开始的文章/">我的博客开始的文章</a>
+    <h1 class="article-title" itemprop="name">
+      css炫酷登录按钮
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2019/07/12/css炫酷登录按钮/" class="archive-article-date">
+  	<time datetime="2019-07-12T09:39:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>主要实现了一个登录按钮以及登录过程的动画以及登录结束后显示对号</p>
+<a id="more"></a>
+<h4 id="html代码如下"><a href="#html代码如下" class="headerlink" title="html代码如下:"></a>html代码如下:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;CN&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</span><br><span class="line">  &lt;title&gt;css炫酷登录按钮&lt;/title&gt;</span><br><span class="line">  &lt;link rel=&quot;stylesheet&quot; href=&quot;./style.css&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;button class=&quot;login&quot;&gt;</span><br><span class="line">      &lt;p&gt;LOGIN&lt;/p&gt;</span><br><span class="line">      &lt;div class=&quot;loading&quot;&gt;</span><br><span class="line">        &lt;div&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;!-- 使用svg绘制对号 --&gt;</span><br><span class="line">      &lt;svg class=&quot;checkmark&quot; width=&apos;30px&apos; height=&apos;30px&apos; stroke=&apos;white&apos; fill=&quot;none&quot;&gt;</span><br><span class="line">        &lt;polyline points=&apos;2,10 12,18 28,2&apos;&gt;&lt;/polyline&gt;</span><br><span class="line">      &lt;/svg&gt;</span><br><span class="line">    &lt;/button&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/jquery/3.4.1/jquery.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">$($(&apos;.login&apos;).click(</span><br><span class="line">    function () &#123;</span><br><span class="line">        if (!$(this).hasClass(&apos;active&apos;)) &#123;</span><br><span class="line">            $(this).toggleClass(&apos;active&apos;);</span><br><span class="line">            setTimeout(</span><br><span class="line">                () =&gt; &#123;</span><br><span class="line">                    $(this).addClass(&apos;verity&apos;);</span><br><span class="line">                &#125;, 2000</span><br><span class="line">            )</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
+<h4 id="css代码如下"><a href="#css代码如下" class="headerlink" title="css代码如下"></a>css代码如下</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">*&#123;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;</span><br><span class="line">   height: 100vh;</span><br><span class="line">   display: flex;</span><br><span class="line">   justify-content: center;</span><br><span class="line">   align-items: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 按钮样式 */</span><br><span class="line">.login&#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  border:none;</span><br><span class="line">  outline: none;</span><br><span class="line"></span><br><span class="line">  width: 12rem;</span><br><span class="line">  height: 5rem;</span><br><span class="line">  border-radius: 5rem;</span><br><span class="line">  background-color: #000;</span><br><span class="line">  color: #fff;</span><br><span class="line">  font-weight: bold;</span><br><span class="line">  font-size: 1.5rem;</span><br><span class="line">  box-shadow: 0 8px 28px black;</span><br><span class="line">  cursor: pointer;</span><br><span class="line">  transition: .5s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.active.login&#123;</span><br><span class="line">    width: 5rem;</span><br><span class="line">    color: transparent;//颜色透明</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* /按钮样式 */</span><br><span class="line"></span><br><span class="line">/* 加载样式 */</span><br><span class="line">.loading&#123;</span><br><span class="line">    opacity: 0;</span><br><span class="line">    transition: .5s;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">.active .loading&#123;</span><br><span class="line">  left: 50%;</span><br><span class="line">  top: 50%;</span><br><span class="line">  transform: translate(-50%,-50%);</span><br><span class="line">  width: 70%;</span><br><span class="line">  height: 40%;</span><br><span class="line">  position: absolute;</span><br><span class="line"></span><br><span class="line">  display: flex;</span><br><span class="line">  justify-content: space-around;</span><br><span class="line">  align-items: flex-end;</span><br><span class="line">   opacity: 1;</span><br><span class="line">&#125;</span><br><span class="line">.active .loading div&#123;</span><br><span class="line">  width: .3rem;</span><br><span class="line">  height: .3rem;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">  background-color: #fff;</span><br><span class="line">  animation: .9s loading ease-in-out infinite alternate;</span><br><span class="line">&#125;</span><br><span class="line">/* /加载样式 */</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">@keyframes loading &#123;</span><br><span class="line">    to&#123;</span><br><span class="line">      transform: translate(0,-1rem);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.active .loading div:nth-child(2)&#123;</span><br><span class="line">  animation-delay: .2s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.active .loading div:nth-child(3)&#123;</span><br><span class="line">  animation-delay: .4s;</span><br><span class="line">&#125;</span><br><span class="line">.verity .loading&#123;</span><br><span class="line">  opacity: 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* checkmark */</span><br><span class="line">   .checkmark&#123;</span><br><span class="line">     position: absolute;</span><br><span class="line">     left: 50%;</span><br><span class="line">     top:56%;</span><br><span class="line">     transform: translate(-50%,-50%);</span><br><span class="line">     stroke-width: 2px;</span><br><span class="line">     /* 利用stroke的虚线和偏移值达到加载的动画效果 */</span><br><span class="line">     stroke-dasharray: 36px;</span><br><span class="line">     stroke-dashoffset: 36px;</span><br><span class="line">   &#125;</span><br><span class="line">   .verity .checkmark&#123;</span><br><span class="line">     animation: .6s show forwards;</span><br><span class="line">     animation-delay: .4s;</span><br><span class="line">   &#125;</span><br><span class="line">   @keyframes show&#123;</span><br><span class="line">      to&#123;</span><br><span class="line">        stroke-dashoffset: 0;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">/* /checkmark */</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html css jquery</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://sherryai.top/2019/07/12/css炫酷登录按钮/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/07/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -228,8 +362,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
